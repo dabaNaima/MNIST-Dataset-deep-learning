@@ -1,0 +1,19 @@
+En résume 
+
+Facteurs à Considérer pour les Modèles (CNN, Faster R-CNN, VIT) en général :
+•	Taille du Jeu de Données : Pour des ensembles de données de petite taille, les CNN peuvent être plus efficaces, tandis que des modèles plus complexes comme Faster R-CNN et VIT peuvent tirer parti de la richesse des données pour des tâches plus complexes.
+•	Complexité de la Tâche : La nature de la tâche influence le choix du modèle. Pour la détection d'objets, Faster R-CNN peut être plus approprié, tandis que VIT pourrait exceller dans des tâches de classification d'images complexes.
+•	Ressources de Calcul : Les modèles plus complexes, tels que VIT, peuvent nécessiter davantage de ressources de calcul en raison de la complexité de l'architecture. CNN, en particulier avec des architectures pré-entraînées comme VGG16 et AlexNet, peut être plus efficace en termes de ressources.
+•	Réglage des Hyperparamètres : Chaque modèle a ses propres ensembles d'hyperparamètres à optimiser. CNNs peuvent nécessiter un réglage fin pour différentes tâches, tandis que VIT pourrait nécessiter un accord plus délicat sur les paramètres.
+•	Interprétabilité : Les CNNs peuvent être plus interprétables avec des techniques comme la visualisation de filtres, tandis que la capacité de VIT à capturer des relations à longue distance peut rendre leur interprétation plus complexe.
+•	Robustesse aux Déformations : Les CNNs peuvent être plus robustes aux déformations locales grâce à la convolution, tandis que VIT peut gérer les relations à grande échelle. Faster R-CNN peut également montrer une robustesse décente grâce à ses mécanismes de détection
+dans le cas de classification MNIST :
+•	Taille du Jeu de Données : MNIST étant un ensemble de données relativement petit (60 000 images d'entraînement), les CNNs peuvent être suffisamment performants pour la classification d'images, en tirant parti de leur capacité à capturer des motifs locaux.
+•	Complexité de la Tâche : La classification d'images MNIST est une tâche relativement simple, où la localisation des objets n'est pas nécessaire. Un modèle CNN bien conçu devrait être capable de gérer cette tâche efficacement.
+•	Ressources de Calcul : En raison de la simplicité de la tâche MNIST, les modèles plus simples comme les CNNs peuvent être plus efficaces en termes de ressources de calcul par rapport à des modèles plus complexes comme VIT ou Faster R-CNN, qui sont conçus pour des tâches plus complexes.
+•	Réglage des Hyperparamètres : Les CNNs ont une architecture bien établie pour la classification d'images, et des architectures pré-entraînées telles que VGG16 et AlexNet peuvent être adaptées à MNIST avec peu de réglages. VIT peut nécessiter un réglage plus fin pour cette tâche spécifique.
+•	Interprétabilité : Les CNNs, en particulier avec des architectures plus simples, peuvent être plus interprétables sur des ensembles de données comme MNIST. Les filtres appris peuvent être visualisés pour comprendre ce que le réseau apprend.
+•	Robustesse aux Déformations : MNIST étant un ensemble de données propre, la robustesse aux déformations locales n'est pas une préoccupation majeure. Les CNNs devraient être suffisamment robustes pour cette tâche spécifique.
+En bref, pour la tâche de classification d'images sur MNIST, un CNN bien conçu est probablement un choix solide en raison de sa simplicité, de sa performance bien établie et de son efficacité en termes de ressources. Les modèles plus complexes comme VIT et Faster R-CNN peuvent ne pas apporter d'avantages significatifs pour cette tâche spécifique.
+
+
